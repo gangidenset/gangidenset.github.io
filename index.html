@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gangiden Labs</title>
   <meta name="description" content="Gangiden Labs は、暮らしと仕事を少し便利にするスマートフォンアプリを開発する個人デベロッパーです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="wrap">
-      <a class="logo" href="./">Gangiden <span>Labs</span></a>
+      <a class="logo" href="./">Gangiden Labs</a>
       <nav>
         <a href="#apps">アプリ</a>
         <a href="privacy-policy.html">プライバシーポリシー</a>
@@ -21,158 +24,220 @@
 
   <main class="wrap">
     <div class="hero">
-      <h1>暮らしと仕事を、<br>少しだけ便利に。</h1>
-      <p>Gangiden Labs は、AI を活用したスマートフォンアプリを開発している個人デベロッパーです。</p>
+      <div class="hero-text">
+        <h1><span class="line">暮らしと仕事を、</span><span class="line">少しだけ便利に。</span></h1>
+        <p>Gangiden Labs は、AI を活用したスマートフォンアプリを開発している個人デベロッパーです。</p>
+        <p class="count">これまでに作ったアプリは14本。アイコンをタップすると紹介へ移動します。</p>
+      </div>
+
+      <div class="phone" aria-label="アプリ一覧">
+        <div class="screen">
+          <nav class="home">
+            <a class="icon" href="#medal-bank" style="--c:#d99a00;--i:0"><span class="glyph" aria-hidden="true">貯</span><span class="label">メダルバンク</span></a>
+            <a class="icon" href="#my-money" style="--c:#2e9a68;--i:1"><span class="glyph" aria-hidden="true">¥</span><span class="label">my-money</span></a>
+            <a class="icon" href="#liflow" style="--c:#3a74d8;--i:2"><span class="glyph" aria-hidden="true">日</span><span class="label">LIFE MANAGER</span></a>
+            <a class="icon" href="#family-hub" style="--c:#e0645a;--i:3"><span class="glyph" aria-hidden="true">家</span><span class="label">FamilyHub</span></a>
+            <a class="icon" href="#photo-link" style="--c:#a755cf;--i:4"><span class="glyph" aria-hidden="true">写</span><span class="label">PhotoLink</span></a>
+            <a class="icon" href="#miminavi" style="--c:#16929f;--i:5"><span class="glyph" aria-hidden="true">耳</span><span class="label">ミミナビ</span></a>
+            <a class="icon" href="#kami" style="--c:#c27530;--i:6"><span class="glyph" aria-hidden="true">紙</span><span class="label">書類読み取り</span></a>
+            <a class="icon" href="#english-battle" style="--c:#d6463a;--i:7"><span class="glyph" aria-hidden="true">英</span><span class="label">英語バトル</span></a>
+            <a class="icon" href="#sort-factory" style="--c:#4c58d4;--i:8"><span class="glyph" aria-hidden="true">箱</span><span class="label">SORT FACTORY</span></a>
+            <a class="icon" href="#idle-orbit" style="--c:#273a7c;--i:9"><span class="glyph" aria-hidden="true">星</span><span class="label">IDLE ORBIT</span></a>
+            <a class="icon" href="#zero-day" style="--c:#2e3348;--i:10"><span class="glyph" aria-hidden="true">零</span><span class="label">ZERO DAY</span></a>
+            <a class="icon" href="#sql-lab" style="--c:#2a8bd2;--i:11"><span class="glyph" aria-hidden="true">表</span><span class="label">SQL LAB</span></a>
+            <a class="icon" href="#floor-planner" style="--c:#738a2c;--i:12"><span class="glyph" aria-hidden="true">間</span><span class="label">Floor Planner</span></a>
+            <a class="icon" href="#boat-analyzer" style="--c:#1d68a3;--i:13"><span class="glyph" aria-hidden="true">艇</span><span class="label">BOAT ANALYZER</span></a>
+          </nav>
+        </div>
+      </div>
     </div>
 
-    <section id="apps">
+    <section id="apps" class="catalog">
       <h2>アプリ</h2>
+      <p>「試す」から、Web 版や Android 版をそのまま使えます。開発中のものはソースコードを公開しています。</p>
 
-      <h3 class="group">スマホアプリ</h3>
+      <div class="group">
+        <h3>スマホアプリ</h3>
+        <div class="apps">
+          <article class="app" id="medal-bank" style="--c:#d99a00">
+            <span class="glyph" aria-hidden="true">貯</span>
+            <div>
+              <h4>メダルバンク <span class="status">Android アプリあり</span></h4>
+              <p>スロットの貯メダルを自分の資産として管理するアプリ。数秒で記録でき、換金価値や月ごとの収支、立ち回りの診断まで確認できます。データは端末内に保存されます。</p>
+              <div class="links">
+                <a class="try" href="https://github.com/gangidenset/medal-bank/releases/latest">Android 版を試す</a>
+                <a class="src" href="https://gangidenset.github.io/medal-bank/">Web 版</a>
+                <a class="src" href="https://github.com/gangidenset/medal-bank">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-      <div class="card">
-        <span class="tag">Android アプリあり</span>
-        <h3>メダルバンク</h3>
-        <p>スロットの貯メダルを自分の資産として管理するアプリ。数秒で記録でき、換金価値や月ごとの収支、立ち回りの診断まで確認できます。データは端末内に保存されます。</p>
-        <div class="links">
-          <a href="https://github.com/gangidenset/medal-bank/releases/latest">Android 版をダウンロード</a>
-          <a href="https://gangidenset.github.io/medal-bank/">Web 版</a>
-          <a href="https://github.com/gangidenset/medal-bank">GitHub</a>
+          <article class="app" id="my-money" style="--c:#2e9a68">
+            <span class="glyph" aria-hidden="true">¥</span>
+            <div>
+              <h4>my-money <span class="status">開発中</span></h4>
+              <p>「自分の収入なら、どこまでお金を使っていいのか」が分かる家計アプリです。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/my-money/">Web 版を試す</a>
+                <a class="src" href="https://github.com/gangidenset/my-money">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="liflow" style="--c:#3a74d8">
+            <span class="glyph" aria-hidden="true">日</span>
+            <div>
+              <h4>AI LIFE MANAGER Lite <span class="status">開発中</span></h4>
+              <p>日々のタスクと家計簿をまとめて管理するアプリ。思いついたまま書いた文章から、AI がタスクや支出を登録します。複数の端末で同期できます。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/liflow/">Web 版を試す</a>
+                <a class="src" href="https://github.com/gangidenset/liflow">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="family-hub" style="--c:#e0645a">
+            <span class="glyph" aria-hidden="true">家</span>
+            <div>
+              <h4>FamilyHub <span class="status">開発中</span></h4>
+              <p>買い物リスト・家族の予定・タスク・共有メモを、サーバーやアカウントなしで家族のスマホ同士で共有するアプリ。オフラインで動き、データは家族の端末にだけ保存されます。</p>
+              <div class="links">
+                <a class="src" href="https://github.com/gangidenset/family-hub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="photo-link" style="--c:#a755cf">
+            <span class="glyph" aria-hidden="true">写</span>
+            <div>
+              <h4>PhotoLink <span class="status">開発中</span></h4>
+              <p>家族や友人など、招待した人だけで写真・動画を共有できるプライベートアルバム。アップロード前に位置情報を自動で削除します。</p>
+              <div class="links">
+                <a class="src" href="https://github.com/gangidenset/photo-link">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="miminavi" style="--c:#16929f">
+            <span class="glyph" aria-hidden="true">耳</span>
+            <div>
+              <h4>ミミナビ <span class="status">デモ版</span></h4>
+              <p>画面を見なくても、音声だけで目的地まで案内するナビアプリ。ビーコンで屋内の現在地を推定し、行き先を声で伝えるとルートを案内します。</p>
+              <div class="links">
+                <a class="try" href="https://github.com/gangidenset/miminavi-app/releases/download/latest/miminavi.apk">Android 版を試す</a>
+                <a class="src" href="https://github.com/gangidenset/miminavi-app">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="kami" style="--c:#c27530">
+            <span class="glyph" aria-hidden="true">紙</span>
+            <div>
+              <h4>書類読み取り × 家族共有リスト（仮称） <span class="status">開発中</span></h4>
+              <p>学校のプリントや書類をカメラで撮るだけで、AI が予定や持ち物を読み取り、家族と共有できるリストにまとめます。</p>
+            </div>
+          </article>
         </div>
       </div>
 
-      <div class="card">
-        <span class="tag">開発中</span>
-        <h3>my-money</h3>
-        <p>「自分の収入なら、どこまでお金を使っていいのか」が分かる家計アプリです。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/my-money/">Web 版</a>
-          <a href="https://github.com/gangidenset/my-money">GitHub</a>
+      <div class="group">
+        <h3>ゲーム</h3>
+        <div class="apps">
+          <article class="app" id="english-battle" style="--c:#d6463a">
+            <span class="glyph" aria-hidden="true">英</span>
+            <div>
+              <h4>英語バトル <span class="status">Web 版あり</span></h4>
+              <p>中学生が毎日遊べる、高校入試対策の英語学習ゲーム。英単語・英文法の4択バトルで、レベルや連続学習日数で成長を実感できます。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/english-game-app/">遊ぶ</a>
+                <a class="src" href="https://github.com/gangidenset/english-game-app">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="sort-factory" style="--c:#4c58d4">
+            <span class="glyph" aria-hidden="true">箱</span>
+            <div>
+              <h4>SORT FACTORY（仮称） <span class="status">試遊版</span></h4>
+              <p>行・列の数字やトラックの位置を手がかりに、倉庫の箱の置き場所を理詰めで確定させていく推理パズル。答えは必ず1つです。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/sort-factory-game/">遊ぶ</a>
+                <a class="src" href="https://github.com/gangidenset/sort-factory-game">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="idle-orbit" style="--c:#273a7c">
+            <span class="glyph" aria-hidden="true">星</span>
+            <div>
+              <h4>IDLE ORBIT <span class="status">開発中</span></h4>
+              <p>宇宙の惑星に採掘基地を作り、施設とロボットを強化しながら資源を自動生産する放置型シミュレーションゲームです。</p>
+              <div class="links">
+                <a class="src" href="https://github.com/gangidenset/idle-orbit-game">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app" id="zero-day" style="--c:#2e3348">
+            <span class="glyph" aria-hidden="true">零</span>
+            <div>
+              <h4>PROJECT: ZERO DAY <span class="status">デモ版</span></h4>
+              <p>架空企業のシステムの弱点を見つけ、設定を直して再テストする、初心者向けのサイバーセキュリティ学習ゲームです。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/zero-day/">遊ぶ</a>
+                <a class="src" href="https://github.com/gangidenset/zero-day">GitHub</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
 
-      <div class="card">
-        <span class="tag">開発中</span>
-        <h3>AI LIFE MANAGER Lite</h3>
-        <p>日々のタスクと家計簿をまとめて管理するアプリ。思いついたまま書いた文章から、AI がタスクや支出を登録します。複数の端末で同期できます。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/liflow/">Web 版</a>
-          <a href="https://github.com/gangidenset/liflow">GitHub</a>
-        </div>
-      </div>
+      <div class="group">
+        <h3>Web ツール・学習サイト</h3>
+        <div class="apps">
+          <article class="app" id="sql-lab" style="--c:#2a8bd2">
+            <span class="glyph" aria-hidden="true">表</span>
+            <div>
+              <h4>SQL MASTERY LAB <span class="status">公開中</span></h4>
+              <p>ブラウザの中で動く PostgreSQL に実際に SQL を書いて学べる無料の学習サイト。基礎から、実務のデータベース移行の進め方まで扱います。登録不要です。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/sql-mastery-lab/">学ぶ</a>
+                <a class="src" href="https://github.com/gangidenset/sql-mastery-lab">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-      <div class="card">
-        <span class="tag">開発中</span>
-        <h3>FamilyHub</h3>
-        <p>買い物リスト・家族の予定・タスク・共有メモを、サーバーやアカウントなしで家族のスマホ同士で共有するアプリ。オフラインで動き、データは家族の端末にだけ保存されます。</p>
-        <div class="links">
-          <a href="https://github.com/gangidenset/family-hub">GitHub</a>
-        </div>
-      </div>
+          <article class="app" id="floor-planner" style="--c:#738a2c">
+            <span class="glyph" aria-hidden="true">間</span>
+            <div>
+              <h4>AI Floor Planner <span class="status">Web 版あり</span></h4>
+              <p>間取り図を読み込んで家具を実寸で配置し、AI に家具配置を3パターン提案してもらえる Web アプリです。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/floor-planner/">使う</a>
+                <a class="src" href="https://github.com/gangidenset/floor-planner">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-      <div class="card">
-        <span class="tag">開発中</span>
-        <h3>PhotoLink</h3>
-        <p>家族や友人など、招待した人だけで写真・動画を共有できるプライベートアルバム。アップロード前に位置情報を自動で削除します。</p>
-        <div class="links">
-          <a href="https://github.com/gangidenset/photo-link">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">デモ版</span>
-        <h3>ミミナビ</h3>
-        <p>画面を見なくても、音声だけで目的地まで案内するナビアプリ。ビーコンで屋内の現在地を推定し、行き先を声で伝えるとルートを案内します。</p>
-        <div class="links">
-          <a href="https://github.com/gangidenset/miminavi-app/releases/download/latest/miminavi.apk">Android 版をダウンロード</a>
-          <a href="https://github.com/gangidenset/miminavi-app">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">開発中</span>
-        <h3>書類読み取り × 家族共有リスト（仮称）</h3>
-        <p>学校のプリントや書類をカメラで撮るだけで、AI が予定や持ち物を読み取り、家族と共有できるリストにまとめます。</p>
-      </div>
-
-      <h3 class="group">ゲーム</h3>
-
-      <div class="card">
-        <span class="tag">Web 版あり</span>
-        <h3>英語バトル</h3>
-        <p>中学生が毎日遊べる、高校入試対策の英語学習ゲーム。英単語・英文法の4択バトルで、レベルや連続学習日数で成長を実感できます。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/english-game-app/">遊ぶ</a>
-          <a href="https://github.com/gangidenset/english-game-app">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">試遊版</span>
-        <h3>SORT FACTORY（仮称）</h3>
-        <p>行・列の数字やトラックの位置を手がかりに、倉庫の箱の置き場所を理詰めで確定させていく推理パズル。答えは必ず1つです。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/sort-factory-game/">遊ぶ</a>
-          <a href="https://github.com/gangidenset/sort-factory-game">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">開発中</span>
-        <h3>IDLE ORBIT</h3>
-        <p>宇宙の惑星に採掘基地を作り、施設とロボットを強化しながら資源を自動生産する放置型シミュレーションゲームです。</p>
-        <div class="links">
-          <a href="https://github.com/gangidenset/idle-orbit-game">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">デモ版</span>
-        <h3>PROJECT: ZERO DAY</h3>
-        <p>架空企業のシステムの弱点を見つけ、設定を直して再テストする、初心者向けのサイバーセキュリティ学習ゲームです。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/zero-day/">遊ぶ</a>
-          <a href="https://github.com/gangidenset/zero-day">GitHub</a>
-        </div>
-      </div>
-
-      <h3 class="group">Web ツール・学習サイト</h3>
-
-      <div class="card">
-        <span class="tag">公開中</span>
-        <h3>SQL MASTERY LAB</h3>
-        <p>ブラウザの中で動く PostgreSQL に実際に SQL を書いて学べる無料の学習サイト。基礎から、実務のデータベース移行の進め方まで扱います。登録不要です。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/sql-mastery-lab/">学ぶ</a>
-          <a href="https://github.com/gangidenset/sql-mastery-lab">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">Web 版あり</span>
-        <h3>AI Floor Planner</h3>
-        <p>間取り図を読み込んで家具を実寸で配置し、AI に家具配置を3パターン提案してもらえる Web アプリです。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/floor-planner/">使う</a>
-          <a href="https://github.com/gangidenset/floor-planner">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">デモ版</span>
-        <h3>BOAT ANALYZER</h3>
-        <p>競艇の出走表・展示・オッズ・過去成績をまとめ、レース分析から期待値の計算までを行う Web アプリ。現在はサンプルデータで動作します。</p>
-        <div class="links">
-          <a href="https://gangidenset.github.io/boat-analyzer/">使う</a>
-          <a href="https://github.com/gangidenset/boat-analyzer">GitHub</a>
+          <article class="app" id="boat-analyzer" style="--c:#1d68a3">
+            <span class="glyph" aria-hidden="true">艇</span>
+            <div>
+              <h4>BOAT ANALYZER <span class="status">デモ版</span></h4>
+              <p>競艇の出走表・展示・オッズ・過去成績をまとめ、レース分析から期待値の計算までを行う Web アプリ。現在はサンプルデータで動作します。</p>
+              <div class="links">
+                <a class="try" href="https://gangidenset.github.io/boat-analyzer/">使う</a>
+                <a class="src" href="https://github.com/gangidenset/boat-analyzer">GitHub</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <h2>お問い合わせ</h2>
-      <p>アプリに関するご質問・ご要望は、以下のメールアドレスまでお送りください。<br>
-      <a href="mailto:gangidenset@gmail.com">gangidenset@gmail.com</a></p>
+      <p>アプリに関するご質問・ご要望は、メールでお送りください。</p>
+      <a class="mail" href="mailto:gangidenset@gmail.com">gangidenset@gmail.com</a>
     </section>
   </main>
 
@@ -180,8 +245,10 @@
     <div class="wrap">
       <a href="privacy-policy.html">プライバシーポリシー</a>
       <a href="https://github.com/gangidenset">GitHub</a>
-      <div>&copy; 2026 Gangiden Labs</div>
+      <div class="copy">&copy; 2026 Gangiden Labs</div>
     </div>
   </footer>
+
+  <script src="motion.js"></script>
 </body>
 </html>
